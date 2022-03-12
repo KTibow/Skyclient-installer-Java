@@ -25,7 +25,7 @@
     "module": "project.main",
     "inspectionName": "IOResource"
   },
-  "hash": "690b894740fc5be13a14a4ab3d75744052076d9359ef9114ffc0548a04078d8a"
+  "hash": "81fce4a0c682f31ecd7ddbb0c1f6397fd89769132a2be3b828c4c6be4c62ce89"
 },{
   "tool": "Code Inspection",
   "category": "Resource management",
@@ -53,7 +53,7 @@
     "module": "project.main",
     "inspectionName": "IOResource"
   },
-  "hash": "d06f7f186011f5350f8498947876a1bc6057629a9d993755620433f57737acc7"
+  "hash": "fcb1339ea0ff58487889e044f56563a0774754570a0dd6a257274a86ed31603a"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -94,34 +94,6 @@
       "type": "file",
       "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
       "language": "JAVA",
-      "line": 648,
-      "offset": 16,
-      "length": 15,
-      "code": {
-        "startLine": 646,
-        "length": 15,
-        "offset": 124,
-        "surroundingCode": "            return (Component) ois.readObject();\n        } catch (IOException | ClassNotFoundException ex) {\n            ex.printStackTrace();\n            return null;\n        }"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "10e5ef8592efe4181814bc2188d044f646f8588bf2175089eba9316b6c7ccc4c"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
-      "language": "JAVA",
       "line": 478,
       "offset": 27,
       "length": 15,
@@ -137,35 +109,7 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "0886f926b8a48c045d0c23bee4e2ffcd2f9509bcb5c014ebdc349efe55809608"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
-      "language": "JAVA",
-      "line": 313,
-      "offset": 31,
-      "length": 15,
-      "code": {
-        "startLine": 311,
-        "length": 15,
-        "offset": 143,
-        "surroundingCode": "                            Image.setIcon(new ImageIcon(icon2));\n                        } catch (Exception e) {\n                            e.printStackTrace();\n                        }\n                    });"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "c52d5ad4249d6ff7fb9c4e3635462353bb7b3608a41f96e18e5de9bb8e5eaf90"
+  "hash": "beccb0737c598e420b3de81077ede7ec6540bc8c4109b341ff0a15b146ed6612"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -193,7 +137,63 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "5b3fbeec9447a1c37eb59571c15d2260159c95eaec38bd048fa4e8d16a3b7c49"
+  "hash": "3ef5b06945ec73589a5f5db468d3f4e8ca47a2fba6f1e6a4343e35f760936196"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
+      "language": "JAVA",
+      "line": 383,
+      "offset": 48,
+      "length": 15,
+      "code": {
+        "startLine": 381,
+        "length": 15,
+        "offset": 215,
+        "surroundingCode": "                                            Desktop.getDesktop().browse(new URL(action.link).toURI());\n                                        } catch (Exception e2) {\n                                            e2.printStackTrace();\n                                        }\n                                    });"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "f53ef27359d692392e361f6de0ab7c774d98d830f9181526d629035e0b73b054"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
+      "language": "JAVA",
+      "line": 313,
+      "offset": 31,
+      "length": 15,
+      "code": {
+        "startLine": 311,
+        "length": 15,
+        "offset": 143,
+        "surroundingCode": "                            Image.setIcon(new ImageIcon(icon2));\n                        } catch (Exception e) {\n                            e.printStackTrace();\n                        }\n                    });"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "c0b46aeb36843d1e060a63632b81bf9349f87113ef3f836f0e543eefe93273f0"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -277,7 +277,7 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "e1867749a7df5079eb7d1f5854d65f9e651ad204990dda690ffc859e1aaa1583"
+  "hash": "3fa68d8ea1000a6e25fe06b73479d0063633dcb505cf3c99050e2c1326b6900a"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -305,7 +305,7 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "0684df489168be64b125097958176f3e07c7a4b04fac661b09ec2ef6d5829330"
+  "hash": "8bd069f8e74795bfff0af3a9d9941dd89bfedd7a0b1773ba6efbecd669bf54e0"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -333,7 +333,7 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "6d278184689fb21d5b6db620af96d98e6e4c6103d43508b6c87154c71feba31d"
+  "hash": "d33057fb637a317143c91f163f7e85611d005ad3650dcb03ef08fc15eda887f1"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -361,7 +361,7 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "b12826a6f1b9fa32affd25326098a165dff2b42b2938c26fefdd7fab1f6e32c0"
+  "hash": "b0e944976b28d788c89911260d72c77c1f617c824463da0e4e353af8afc9ad35"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -389,7 +389,7 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "05d2f65caf4df365003375b18b211aac66934418fcbfbd953fc60839b3e81e99"
+  "hash": "5aec944487fffde365ad8a4601bb9b5c75130d21828d0fcdf3bd5f71aeb1ab84"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -417,7 +417,7 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "7ec05a44f29d3f76de8c777571f701aff781f14621c85a9b8134bf5507247921"
+  "hash": "ec8a972895af9dc9c09f068fe34838415217923100c75bc1210123e8fd653044"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -430,14 +430,14 @@
       "type": "file",
       "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
       "language": "JAVA",
-      "line": 383,
-      "offset": 48,
+      "line": 648,
+      "offset": 16,
       "length": 15,
       "code": {
-        "startLine": 381,
+        "startLine": 646,
         "length": 15,
-        "offset": 215,
-        "surroundingCode": "                                            Desktop.getDesktop().browse(new URL(action.link).toURI());\n                                        } catch (Exception e2) {\n                                            e2.printStackTrace();\n                                        }\n                                    });"
+        "offset": 124,
+        "surroundingCode": "            return (Component) ois.readObject();\n        } catch (IOException | ClassNotFoundException ex) {\n            ex.printStackTrace();\n            return null;\n        }"
       }
     }
   ],
@@ -445,35 +445,7 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "984496d2f8052722cc8a2ed61ac3aaad710fe58c3f37459c1658ddf3051c7e4a"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/utils/Http.java",
-      "language": "JAVA",
-      "line": 41,
-      "offset": 15,
-      "length": 15,
-      "code": {
-        "startLine": 39,
-        "length": 15,
-        "offset": 60,
-        "surroundingCode": "            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n        return null;"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "776b823a86bc9ef3f1918e4c8f291fff4562473e1d72367e522826b22335d100"
+  "hash": "1124aa3d2d082b41545636727d8ff81b2e193107c9c9aaf1620452603e953285"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -502,6 +474,34 @@
     "inspectionName": "ThrowablePrintStackTrace"
   },
   "hash": "bda3d7083049fcbdac220a8ba544da82cc17e5ea7c1f017ccdffbda5f35863c3"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/utils/Http.java",
+      "language": "JAVA",
+      "line": 41,
+      "offset": 15,
+      "length": 15,
+      "code": {
+        "startLine": 39,
+        "length": 15,
+        "offset": 60,
+        "surroundingCode": "            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n        return null;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "776b823a86bc9ef3f1918e4c8f291fff4562473e1d72367e522826b22335d100"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
@@ -725,7 +725,7 @@
     "module": "project.main",
     "inspectionName": "ThreadStartInConstruction"
   },
-  "hash": "7451eaf64a255dd7a07db7165933a902c9c9448adca453d07a79cae9d4f05bae"
+  "hash": "c962736f48a154428fbbb06fef9ce8e1bb480b7abeb0022632e195c03771d897"
 },{
   "tool": "Code Inspection",
   "category": "JVM languages",
@@ -745,7 +745,7 @@
         "startLine": 97,
         "length": 7,
         "offset": 140,
-        "surroundingCode": "                            if (mod.hash != null) {\n                                try {\n                                    String hash = Hashing.sha256().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod.file))).toString();\n                                    if (!hash.equals(mod.hash)) {\n                                        System.out.println(\"Hash of \" + mod.getDisplay() + \" is incorrect, deleting and downloading again\");"
+        "surroundingCode": "                            if (mod.hash != null) {\n                                try {\n                                    String hash = Hashing.md5().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod.file))).toString();\n                                    if (!hash.equals(mod.hash)) {\n                                        System.out.println(\"Hash of \" + mod.getDisplay() + \" is incorrect, deleting and downloading again\");"
       }
     }
   ],
@@ -753,13 +753,13 @@
     "module": "project.main",
     "inspectionName": "UnstableApiUsage"
   },
-  "hash": "2fef323d1b7d21be04e79599a464927404e809d7b42442de086d70a0ae576a3a"
+  "hash": "0937ca3fe67cd462cf0d001b41f619d68349296e74240f0322e9c28a0dde48d2"
 },{
   "tool": "Code Inspection",
   "category": "JVM languages",
   "type": "Unstable API Usage",
   "severity": "High",
-  "comment": "'sha256()' is declared in unstable class 'com.google.common.hash.Hashing' marked with @Beta",
+  "comment": "'md5()' is declared in unstable class 'com.google.common.hash.Hashing' marked with @Beta",
   "detailsInfo": "Reports usages of an API marked with one of the annotations as unstable. Such an API may be changed or removed in future versions, breaking the code that uses it.\n\nThe annotations which are used to mark unstable APIs are shown in the list below.\n\nBy default, the inspection ignores usages of unstable APIs\nif their declarations are located in sources of the same project. In such cases it'll be possible to update the usages when you change APIs.\nHowever, it may be inconvenient if the project is big, so one can switch off the **Ignore API declared in this project** option to report\nthe usages of unstable APIs declared in both the project sources and libraries.",
   "sources": [
     {
@@ -768,12 +768,12 @@
       "language": "JAVA",
       "line": 99,
       "offset": 59,
-      "length": 6,
+      "length": 3,
       "code": {
         "startLine": 97,
-        "length": 6,
+        "length": 3,
         "offset": 148,
-        "surroundingCode": "                            if (mod.hash != null) {\n                                try {\n                                    String hash = Hashing.sha256().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod.file))).toString();\n                                    if (!hash.equals(mod.hash)) {\n                                        System.out.println(\"Hash of \" + mod.getDisplay() + \" is incorrect, deleting and downloading again\");"
+        "surroundingCode": "                            if (mod.hash != null) {\n                                try {\n                                    String hash = Hashing.md5().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod.file))).toString();\n                                    if (!hash.equals(mod.hash)) {\n                                        System.out.println(\"Hash of \" + mod.getDisplay() + \" is incorrect, deleting and downloading again\");"
       }
     }
   ],
@@ -781,7 +781,7 @@
     "module": "project.main",
     "inspectionName": "UnstableApiUsage"
   },
-  "hash": "b92216b5013dc241ae52cc868021512f0bfcc30df4f813a35f99b8f54b067102"
+  "hash": "60f0dffc4da3a907c0a533ca564cbbb87d237c7bc9717547d74e4997ca2e2bac"
 },{
   "tool": "Code Inspection",
   "category": "JVM languages",
@@ -795,13 +795,13 @@
       "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
       "language": "JAVA",
       "line": 99,
-      "offset": 84,
+      "offset": 81,
       "length": 11,
       "code": {
         "startLine": 97,
         "length": 11,
-        "offset": 173,
-        "surroundingCode": "                            if (mod.hash != null) {\n                                try {\n                                    String hash = Hashing.sha256().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod.file))).toString();\n                                    if (!hash.equals(mod.hash)) {\n                                        System.out.println(\"Hash of \" + mod.getDisplay() + \" is incorrect, deleting and downloading again\");"
+        "offset": 170,
+        "surroundingCode": "                            if (mod.hash != null) {\n                                try {\n                                    String hash = Hashing.md5().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod.file))).toString();\n                                    if (!hash.equals(mod.hash)) {\n                                        System.out.println(\"Hash of \" + mod.getDisplay() + \" is incorrect, deleting and downloading again\");"
       }
     }
   ],
@@ -809,7 +809,7 @@
     "module": "project.main",
     "inspectionName": "UnstableApiUsage"
   },
-  "hash": "063be413de1d60cc2ae38bc9a15a78116c6e7d13c82a791cea07aa84966a1830"
+  "hash": "d83f930aa4e23ac62e879ba53fb0e685ea35c182b0967a1559fda7a99c39f0a9"
 },{
   "tool": "Code Inspection",
   "category": "JVM languages",
@@ -829,7 +829,7 @@
         "startLine": 141,
         "length": 7,
         "offset": 177,
-        "surroundingCode": "                                        if (mod2.hash != null) {\n                                            try {\n                                                String hash = Hashing.sha256().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod2.file))).toString();\n                                                if (!hash.equals(mod2.hash)) {\n                                                    System.out.println(\"Hash of \" + mod2.getDisplay() + \" is incorrect, deleting and downloading again\");"
+        "surroundingCode": "                                        if (mod2.hash != null) {\n                                            try {\n                                                String hash = Hashing.md5().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod2.file))).toString();\n                                                if (!hash.equals(mod2.hash)) {\n                                                    System.out.println(\"Hash of \" + mod2.getDisplay() + \" is incorrect, deleting and downloading again\");"
       }
     }
   ],
@@ -837,13 +837,13 @@
     "module": "project.main",
     "inspectionName": "UnstableApiUsage"
   },
-  "hash": "af634651dee89e85f73368b08f0080075ed4539e7d8b78d6fcae23de736347d2"
+  "hash": "36dffa5643eafd6c2aa5c2993229210752fa6187f038f64624f4c5c46b3992d8"
 },{
   "tool": "Code Inspection",
   "category": "JVM languages",
   "type": "Unstable API Usage",
   "severity": "High",
-  "comment": "'sha256()' is declared in unstable class 'com.google.common.hash.Hashing' marked with @Beta",
+  "comment": "'md5()' is declared in unstable class 'com.google.common.hash.Hashing' marked with @Beta",
   "detailsInfo": "Reports usages of an API marked with one of the annotations as unstable. Such an API may be changed or removed in future versions, breaking the code that uses it.\n\nThe annotations which are used to mark unstable APIs are shown in the list below.\n\nBy default, the inspection ignores usages of unstable APIs\nif their declarations are located in sources of the same project. In such cases it'll be possible to update the usages when you change APIs.\nHowever, it may be inconvenient if the project is big, so one can switch off the **Ignore API declared in this project** option to report\nthe usages of unstable APIs declared in both the project sources and libraries.",
   "sources": [
     {
@@ -852,12 +852,12 @@
       "language": "JAVA",
       "line": 143,
       "offset": 71,
-      "length": 6,
+      "length": 3,
       "code": {
         "startLine": 141,
-        "length": 6,
+        "length": 3,
         "offset": 185,
-        "surroundingCode": "                                        if (mod2.hash != null) {\n                                            try {\n                                                String hash = Hashing.sha256().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod2.file))).toString();\n                                                if (!hash.equals(mod2.hash)) {\n                                                    System.out.println(\"Hash of \" + mod2.getDisplay() + \" is incorrect, deleting and downloading again\");"
+        "surroundingCode": "                                        if (mod2.hash != null) {\n                                            try {\n                                                String hash = Hashing.md5().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod2.file))).toString();\n                                                if (!hash.equals(mod2.hash)) {\n                                                    System.out.println(\"Hash of \" + mod2.getDisplay() + \" is incorrect, deleting and downloading again\");"
       }
     }
   ],
@@ -865,7 +865,7 @@
     "module": "project.main",
     "inspectionName": "UnstableApiUsage"
   },
-  "hash": "6b6d824b5e629e1d072ac406cde693f91503a0edd26d76fa13375444424d247d"
+  "hash": "3a2417ffbda6c04b91c5bb32a2bef6ad73d6ded021b89bf2dcedaff79437ec83"
 },{
   "tool": "Code Inspection",
   "category": "JVM languages",
@@ -879,13 +879,13 @@
       "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
       "language": "JAVA",
       "line": 143,
-      "offset": 96,
+      "offset": 93,
       "length": 11,
       "code": {
         "startLine": 141,
         "length": 11,
-        "offset": 210,
-        "surroundingCode": "                                        if (mod2.hash != null) {\n                                            try {\n                                                String hash = Hashing.sha256().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod2.file))).toString();\n                                                if (!hash.equals(mod2.hash)) {\n                                                    System.out.println(\"Hash of \" + mod2.getDisplay() + \" is incorrect, deleting and downloading again\");"
+        "offset": 207,
+        "surroundingCode": "                                        if (mod2.hash != null) {\n                                            try {\n                                                String hash = Hashing.md5().hashBytes(Files.toByteArray(new File(SkyclientUniversal.skyclient + \"/mods/\" + mod2.file))).toString();\n                                                if (!hash.equals(mod2.hash)) {\n                                                    System.out.println(\"Hash of \" + mod2.getDisplay() + \" is incorrect, deleting and downloading again\");"
       }
     }
   ],
@@ -893,5 +893,5 @@
     "module": "project.main",
     "inspectionName": "UnstableApiUsage"
   },
-  "hash": "41167199b48671ec3610aee2691463f2740665f5192e771fc5f4b668540e21ee"
+  "hash": "7dcdd6cea0bd252e2e2970b24265c784833f1122149cebf23566623e02b2d3bd"
 }]}
