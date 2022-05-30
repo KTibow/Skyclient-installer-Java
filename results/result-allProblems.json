@@ -59,147 +59,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/guis/Loading.java",
-      "language": "JAVA",
-      "line": 69,
-      "offset": 27,
-      "length": 15,
-      "code": {
-        "startLine": 67,
-        "length": 15,
-        "offset": 123,
-        "surroundingCode": "                        Thread.sleep(30);\n                    } catch (InterruptedException e) {\n                        e.printStackTrace();\n                    }\n                }"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "78551369571d0e72aadf4e37f2271cdbb1a832788b874561a0a0054fc7de2b92"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
-      "language": "JAVA",
-      "line": 478,
-      "offset": 27,
-      "length": 15,
-      "code": {
-        "startLine": 476,
-        "length": 15,
-        "offset": 131,
-        "surroundingCode": "                        Image.setIcon(new ImageIcon(icon2));\n                    } catch (Exception e) {\n                        e.printStackTrace();\n                    }\n                });"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "beccb0737c598e420b3de81077ede7ec6540bc8c4109b341ff0a15b146ed6612"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
-      "language": "JAVA",
-      "line": 530,
-      "offset": 48,
-      "length": 15,
-      "code": {
-        "startLine": 528,
-        "length": 15,
-        "offset": 215,
-        "surroundingCode": "                                            Desktop.getDesktop().browse(new URL(action.link).toURI());\n                                        } catch (Exception e2) {\n                                            e2.printStackTrace();\n                                        }\n                                    });"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "3ef5b06945ec73589a5f5db468d3f4e8ca47a2fba6f1e6a4343e35f760936196"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
-      "language": "JAVA",
-      "line": 383,
-      "offset": 48,
-      "length": 15,
-      "code": {
-        "startLine": 381,
-        "length": 15,
-        "offset": 215,
-        "surroundingCode": "                                            Desktop.getDesktop().browse(new URL(action.link).toURI());\n                                        } catch (Exception e2) {\n                                            e2.printStackTrace();\n                                        }\n                                    });"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "f53ef27359d692392e361f6de0ab7c774d98d830f9181526d629035e0b73b054"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
-      "language": "JAVA",
-      "line": 313,
-      "offset": 31,
-      "length": 15,
-      "code": {
-        "startLine": 311,
-        "length": 15,
-        "offset": 143,
-        "surroundingCode": "                            Image.setIcon(new ImageIcon(icon2));\n                        } catch (Exception e) {\n                            e.printStackTrace();\n                        }\n                    });"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "c0b46aeb36843d1e060a63632b81bf9349f87113ef3f836f0e543eefe93273f0"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -227,7 +87,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -255,7 +115,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -283,7 +143,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -311,7 +171,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -339,7 +199,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -367,7 +227,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -395,7 +255,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -409,7 +269,7 @@
         "startLine": 208,
         "length": 15,
         "offset": 177,
-        "surroundingCode": "                            profile.gameDir = SkyclientUniversal.skyclient.getCanonicalPath();\n                        } catch (IOException ex) {\n                            ex.printStackTrace();\n                        }\n                        profile.icon = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAACGFjVEwAAAAEAAAAAHzNZtAAAAAzUExURf//ACOQY5HbaR68c////11dXXR0dIWFhc3fbNDq6T09PWG/5j+Y2KjQ2Sdyxtrq+k2b5npKrGcAAAABdFJOUwBA5thmAAAAGmZjVEwAAAAAAAAAgAAAAIAAAAAAAAAAAAAIAGQAAK+px9AAAAKZSURBVHja7ZvpbgIxDISBQrcFerz/0zYjZarp4F0OocYgz5898PEhWXESwmp1Rpuu1SgVQAqAl6Z7QNwUowCGAjA5tO6as/1o2nbN2cD/KogCSAHw1kSAyBkJ37u2IrdjISNeATwGAI0pFqFCeFJ9xr0mp28BPAaAFgyTR4ORJ8RgxIL0ePBjvALID8CEdGBTigqRTQjXpYZGv4uaUQEMBWASB4Cu+hZN9Hf4Rf8CGArAAUgHjY2In9Pm0ma2NhVAXgBNxORaOFpMDqBBdSLDGK4CyAegAw+LzZuIBtOEXMDqQiYqQC3yE4gCGA5AZx94IgB/1k0MHbAiAIUogDwAPvlgIUUTCW9IGlQ3tebswkIsgKEAvhDVhYgaewKfYCxBRfEKIDdAFMATfDYduw5NHlhjaAG6TQGMB9Aiigowak6HrqMIQOcAfGJaADkA9Mckbxo6yXBnbEyxALExOTW9NvkEdG5h8pu8AFIAvHbtm2iw69JnJCEUN6gBgPupC3G0APmecXgPuwLIB4AkgNBgfO8AKED+YIFBaBLBZjIhDu8RqwByAfAFr2qsACww3HMQggBAnyiGxqHNn5VxAQwHIAQKUAtPA3hgAqAIcaWv20UxCyA3AAPwfglAC3HfpXb6pXaicKe8AIYDQAxARzpPgTQ5RH9PHsUsgLwACqEAPpnAFQ2IC1QCeGNjMj/oUgC5AQhBZwb0SaoCQJE/Dzb5gTc/6FQAuQD8gJo2kQiAEEsHnVVnD0AXwFCAr6bogOrOhALTRhQBePF5zALIB6AfRgOIN6nvprmByAuRg4/GPWlKBTAcwJPqM5uHTjKRlBtUOiG5WQUwHEAhzk0cdZOqAJ4L4BqxOAGw9Ae3AnhOgGiy8a8QBXBPgB9G8drRaA0Z2QAAABpmY1RMAAAAAQAAABQAAAA8AAAANAAAADwACABkAAETQ/wcAAAAWmZkQVQAAAACeNq1kzEOACAIAx1cjMT/P9eSSCLqJOU2joVAKQOUk6BUOmBLRUAFLLkX2mTIbNg3u7ZEkExssS4UQZmZ1WcQPmXGf9rAbvCgNCELlrRwNRCUEzPhDNF8OvhOAAAAGmZjVEwAAAADAAAAFAAAAEgAAAA4AAAAOAAIAGQCAb6WRGwAAABrZmRBVAAAAAR42s2TQQ6AIAwEOXgxEv//XEvCmmK97Zg4F8L0AC1L60F78kN5BtuEkkewCEB+0f8elKIpx+W1klKFMXBCitdBm5JEQ1ADhMxBKwVTkpTHAmQOGCVzYJdDAamA3Z/NlGXjyQth3xPxg"
+        "surroundingCode": "                            profile.gameDir = SkyclientUniversal.skyclient.getCanonicalPath();\n                        } catch (IOException ex) {\n                            ex.printStackTrace();\n                        }\n                        profile.icon = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAACGFjVEwAAAAEAAAAAHzNZtAAAAAzUExURf//ACOQY5HbaR68c////11dXXR0dIWFhc3fbNDq6T09PWG/5j+Y2KjQ2Sdyxtrq+k2b5npKrGcAAAABdFJOUwBA5thmAAAAGmZjVEwAAAAAAAAAgAAAAIAAAAAAAAAAAAAIAGQAAK+px9AAAAKZSURBVHja7ZvpbgIxDISBQrcFerz/0zYjZarp4F0OocYgz5898PEhWXESwmp1Rpuu1SgVQAqAl6Z7QNwUowCGAjA5tO6as/1o2nbN2cD/KogCSAHw1kSAyBkJ37u2IrdjISNeATwGAI0pFqFCeFJ9xr0mp28BPAaAFgyTR4ORJ8RgxIL0ePBjvALID8CEdGBTigqRTQjXpYZGv4uaUQEMBWASB4Cu+hZN9Hf4Rf8CGArAAUgHjY2In9Pm0ma2NhVAXgBNxORaOFpMDqBBdSLDGK4CyAegAw+LzZuIBtOEXMDqQiYqQC3yE4gCGA5AZx94IgB/1k0MHbAiAIUogDwAPvlgIUUTCW9IGlQ3tebswkIsgKEAvhDVhYgaewKfYCxBRfEKIDdAFMATfDYduw5NHlhjaAG6TQGMB9Aiigowak6HrqMIQOcAfGJaADkA9Mckbxo6yXBnbEyxALExOTW9NvkEdG5h8pu8AFIAvHbtm2iw69JnJCEUN6gBgPupC3G0APmecXgPuwLIB4AkgNBgfO8AKED+YIFBaBLBZjIhDu8RqwByAfAFr2qsACww3HMQggBAnyiGxqHNn5VxAQwHIAQKUAtPA3hgAqAIcaWv20UxCyA3AAPwfglAC3HfpXb6pXaicKe8AIYDQAxARzpPgTQ5RH9PHsUsgLwACqEAPpnAFQ2IC1QCeGNjMj/oUgC5AQhBZwb0SaoCQJE/Dzb5gTc/6FQAuQD8gJo2kQiAEEsHnVVnD0AXwFCAr6bogOrOhALTRhQBePF5zALIB6AfRgOIN6nvprmByAuRg4/GPWlKBTAcwJPqM5uHTjKRlBtUOiG5WQUwHEAhzk0cdZOqAJ4L4BqxOAGw9Ae3AnhOgGiy8a8QBXBPgB9G8drRaA0Z2QAAABpmY1RMAAAAAQAAABQAAAA8AAAANAAAADwACABkAAETQ/wcAAAAWmZkQVQAAAACeNq1kzEOACAIAx1cjMT/P9eSSCLqJOU2joVAKQOUk6BUOmBLRUAFLLkX2mTIbNg3u7ZEkExssS4UQZmZ1WcQPmXGf9rAbvCgNCELlrRwNRCUEzPhDNF8OvhOAAAAGmZjVEwAAAADAAAAFAAAAEgAAAA4AAAAOAAIAGQCAb6WRGwAAABrZmRBVAAAAAR42s2TQQ6AIAwEOXgxEv//XEvCmmK97Zg4F8L0AC1L60F78kN5BtuEkkewCEB+0f8elKIpx+W1klKFMXBCitdBm5JEQ1ADhMxBKwVTkpTHAmQOGCVzYJdDAamA3Z/NlGXjyQth3xPx"
       }
     }
   ],
@@ -417,13 +277,97 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "ec8a972895af9dc9c09f068fe34838415217923100c75bc1210123e8fd653044"
+  "hash": "26551ce4eeeff70aa92a35c5f44084ff427c42ad07aae10b3a4856359e46a3ce"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
+      "language": "JAVA",
+      "line": 383,
+      "offset": 48,
+      "length": 15,
+      "code": {
+        "startLine": 381,
+        "length": 15,
+        "offset": 215,
+        "surroundingCode": "                                            Desktop.getDesktop().browse(new URL(action.link).toURI());\n                                        } catch (Exception e2) {\n                                            e2.printStackTrace();\n                                        }\n                                    });"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "f53ef27359d692392e361f6de0ab7c774d98d830f9181526d629035e0b73b054"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
+      "language": "JAVA",
+      "line": 478,
+      "offset": 27,
+      "length": 15,
+      "code": {
+        "startLine": 476,
+        "length": 15,
+        "offset": 131,
+        "surroundingCode": "                        Image.setIcon(new ImageIcon(icon2));\n                    } catch (Exception e) {\n                        e.printStackTrace();\n                    }\n                });"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "beccb0737c598e420b3de81077ede7ec6540bc8c4109b341ff0a15b146ed6612"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
+      "language": "JAVA",
+      "line": 530,
+      "offset": 48,
+      "length": 15,
+      "code": {
+        "startLine": 528,
+        "length": 15,
+        "offset": 215,
+        "surroundingCode": "                                            Desktop.getDesktop().browse(new URL(action.link).toURI());\n                                        } catch (Exception e2) {\n                                            e2.printStackTrace();\n                                        }\n                                    });"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "3ef5b06945ec73589a5f5db468d3f4e8ca47a2fba6f1e6a4343e35f760936196"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -451,21 +395,21 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
       "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/utils/Http.java",
+      "path": "src/main/java/io/github/koxx12dev/universal/guis/Installer.java",
       "language": "JAVA",
-      "line": 71,
-      "offset": 15,
+      "line": 313,
+      "offset": 31,
       "length": 15,
       "code": {
-        "startLine": 69,
+        "startLine": 311,
         "length": 15,
-        "offset": 60,
-        "surroundingCode": "            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }"
+        "offset": 143,
+        "surroundingCode": "                            Image.setIcon(new ImageIcon(icon2));\n                        } catch (Exception e) {\n                            e.printStackTrace();\n                        }\n                    });"
       }
     }
   ],
@@ -473,69 +417,13 @@
     "module": "project.main",
     "inspectionName": "ThrowablePrintStackTrace"
   },
-  "hash": "bda3d7083049fcbdac220a8ba544da82cc17e5ea7c1f017ccdffbda5f35863c3"
+  "hash": "c0b46aeb36843d1e060a63632b81bf9349f87113ef3f836f0e543eefe93273f0"
 },{
   "tool": "Code Inspection",
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/utils/Http.java",
-      "language": "JAVA",
-      "line": 41,
-      "offset": 15,
-      "length": 15,
-      "code": {
-        "startLine": 39,
-        "length": 15,
-        "offset": 60,
-        "surroundingCode": "            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n        return null;"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "776b823a86bc9ef3f1918e4c8f291fff4562473e1d72367e522826b22335d100"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
-  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/utils/FileUtil.java",
-      "language": "JAVA",
-      "line": 38,
-      "offset": 15,
-      "length": 15,
-      "code": {
-        "startLine": 36,
-        "length": 15,
-        "offset": 54,
-        "surroundingCode": "        catch (IOException e)\n        {\n            e.printStackTrace();\n        }\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThrowablePrintStackTrace"
-  },
-  "hash": "9c494af817c91412f300070776b3662011504cee518c69b4214f52d2c2a381d5"
-},{
-  "tool": "Code Inspection",
-  "category": "Code maturity",
-  "type": "Call to 'printStackTrace()'",
-  "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -563,7 +451,35 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/utils/FileUtil.java",
+      "language": "JAVA",
+      "line": 38,
+      "offset": 15,
+      "length": 15,
+      "code": {
+        "startLine": 36,
+        "length": 15,
+        "offset": 54,
+        "surroundingCode": "        catch (IOException e)\n        {\n            e.printStackTrace();\n        }\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "9c494af817c91412f300070776b3662011504cee518c69b4214f52d2c2a381d5"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -591,7 +507,7 @@
   "category": "Code maturity",
   "type": "Call to 'printStackTrace()'",
   "severity": "High",
-  "comment": "Call to `printStackTrace()` should probably be replaced with more robust logging",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
   "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
   "sources": [
     {
@@ -616,10 +532,94 @@
   "hash": "5ec59c632184be08b310db84c9f8e8f43f47d6558810c174c1d777656eea1e24"
 },{
   "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/guis/Loading.java",
+      "language": "JAVA",
+      "line": 69,
+      "offset": 27,
+      "length": 15,
+      "code": {
+        "startLine": 67,
+        "length": 15,
+        "offset": 123,
+        "surroundingCode": "                        Thread.sleep(30);\n                    } catch (InterruptedException e) {\n                        e.printStackTrace();\n                    }\n                }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "78551369571d0e72aadf4e37f2271cdbb1a832788b874561a0a0054fc7de2b92"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/utils/Http.java",
+      "language": "JAVA",
+      "line": 71,
+      "offset": 15,
+      "length": 15,
+      "code": {
+        "startLine": 69,
+        "length": 15,
+        "offset": 60,
+        "surroundingCode": "            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "bda3d7083049fcbdac220a8ba544da82cc17e5ea7c1f017ccdffbda5f35863c3"
+},{
+  "tool": "Code Inspection",
+  "category": "Code maturity",
+  "type": "Call to 'printStackTrace()'",
+  "severity": "High",
+  "comment": "Call to 'printStackTrace()' should probably be replaced with more robust logging",
+  "detailsInfo": "Reports calls to `Throwable.printStackTrace()` without arguments.\n\nSuch statements are often used for temporary debugging and should be either removed from the production code\nor replaced with a more robust logging facility.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/utils/Http.java",
+      "language": "JAVA",
+      "line": 41,
+      "offset": 15,
+      "length": 15,
+      "code": {
+        "startLine": 39,
+        "length": 15,
+        "offset": 60,
+        "surroundingCode": "            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n        return null;"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThrowablePrintStackTrace"
+  },
+  "hash": "776b823a86bc9ef3f1918e4c8f291fff4562473e1d72367e522826b22335d100"
+},{
+  "tool": "Code Inspection",
   "category": "Probable bugs",
   "type": "Constant conditions & exceptions",
   "severity": "High",
-  "comment": "Argument `SkyclientUniversal.class.getResource(\"/universal/SkyblockClient128.png\")` might be null",
+  "comment": "Argument 'SkyclientUniversal.class.getResource(\"/universal/SkyblockClient128.png\")' might be null",
   "detailsInfo": "Reports code constructs that always produce the same result, may throw exceptions, or violates nullability contracts.\n\nExamples:\n\n    if (array.length < index) {\n      System.out.println(array[index]);\n    } // Array index is always out of bounds\n\n    if (str == null) System.out.println(\"str is null\");\n    System.out.println(str.trim());\n    // the last statement may throw an NPE\n\n    @NotNull\n    Integer square(@Nullable Integer input) {\n        // the method contract is violated\n        return input == null ? null : input * input;\n    }\n\n\nThe inspection behavior may be controlled by a number of annotations, such as\n[nullability](https://www.jetbrains.com/help/idea/nullable-and-notnull-annotations.html) annotations,\n[@Contract](https://www.jetbrains.com/help/idea/contract-annotations.html) annotation,\n`@Range` annotation and so on.\n\nConfigure the inspection:\n\n* Use the **Suggest @Nullable annotation for methods/fields/parameters where nullable values are used** option to warn when a nullable value is passed as an argument to a method with a non-annotated parameter, stored into non-annotated field, or returned from a non-annotated method. In this case, the inspection will suggest propagating the `@Nullable` annotation. You can also configure nullability annotations using the **Configure Annotations** button.\n* Use the **Treat non-annotated members and parameters as @Nullable** option to assume that non-annotated members can be null, so they must not be used in non-null context.\n* Use the **Report not-null required parameter with null-literal argument usages** option to report method parameters that cannot be null (e.g. immediately dereferenced in the method body), but there are call sites where a `null` literal is passed.\n* Use the **Report nullable methods that always return a non-null value** option to report methods that are annotated as `@Nullable`, but always return non-null value. In this case, it's suggested that you change the annotation to `@NotNull`.\n* Use the **Don't report assertions with condition statically proven to be always true** option to avoid reporting assertions that were statically proven to be always true. This also includes conditions like `if (alwaysFalseCondition) throw new IllegalArgumentException();`.\n* Use the **Ignore assert statements** option to control how the inspection treats `assert` statements. By default, the option is disabled, which means that the assertions are assumed to be executed (-ea mode). If the option is enabled, the assertions will be completely ignored (-da mode).\n* Use the **Warn when reading a value guaranteed to be constant** option to add warnings on reading variables that contain some constant values, for example: `true`, `false`, or `null`.\n* Use the **Report problems that happen only on some code paths** option to control whether to report problems that may happen only on some code path. If this option is disabled, warnings like *exception is possible* will not be reported. The inspection will report only warnings like *exception will definitely occur*. This mode may greatly reduce the number of false-positives, especially if the code is not consistently annotated with nullability and contract annotations. That is why it can be useful for finding the most important problems in legacy code bases.",
   "sources": [
     {
@@ -647,7 +647,7 @@
   "category": "Memory",
   "type": "Inner class may be 'static'",
   "severity": "High",
-  "comment": "Inner class `Warning` may be 'static'",
+  "comment": "Inner class 'Warning' may be 'static'",
   "detailsInfo": "Reports inner classes that can be made `static`.\n\nA `static` inner class does not keep an implicit reference to its enclosing instance.\nThis prevents a common cause of memory leaks and uses less memory per instance of the class.\n\n**Example:**\n\n\n      public class Outer {\n        class Inner { // not static\n          public void foo() {\n            bar(\"x\");\n          }\n\n          private void bar(String string) {}\n        }\n      }\n\nAfter the quick-fix is applied:\n\n\n      public class Outer {\n        static class Inner {\n          public void foo() {\n            bar(\"x\");\n          }\n\n          private void bar(String string) {}\n        }\n      }\n",
   "sources": [
     {
@@ -675,35 +675,7 @@
   "category": "Threading issues",
   "type": "Call to 'Thread.start()' during object construction",
   "severity": "High",
-  "comment": "Call to `start()` during object construction",
-  "detailsInfo": "Reports calls to `start()` on `java.lang.Thread` or any of its subclasses during object construction.\n\n\nWhile occasionally useful, such constructs should be avoided due to inheritance issues.\nSubclasses of a class that launches a thread during the object construction will not have finished\nany initialization logic of their own before the thread has launched.\n\nThis inspection does not report if the class that starts a thread is declared `final`.\n\n**Example:**\n\n\n      class MyThread extends Thread {\n        MyThread() {\n          start();\n        }\n      }\n",
-  "sources": [
-    {
-      "type": "file",
-      "path": "src/main/java/io/github/koxx12dev/universal/guis/Loading.java",
-      "language": "JAVA",
-      "line": 47,
-      "offset": 12,
-      "length": 5,
-      "code": {
-        "startLine": 45,
-        "length": 5,
-        "offset": 73,
-        "surroundingCode": "            frame.pack();\n            frame.setVisible(true);\n        }).start();\n    }\n"
-      }
-    }
-  ],
-  "attributes": {
-    "module": "project.main",
-    "inspectionName": "ThreadStartInConstruction"
-  },
-  "hash": "ef336d29d410234b09a0cf62859775ea6340cf121d72efb8d85f8abb94cc6b36"
-},{
-  "tool": "Code Inspection",
-  "category": "Threading issues",
-  "type": "Call to 'Thread.start()' during object construction",
-  "severity": "High",
-  "comment": "Call to `start()` during object construction",
+  "comment": "Call to 'start()' during object construction",
   "detailsInfo": "Reports calls to `start()` on `java.lang.Thread` or any of its subclasses during object construction.\n\n\nWhile occasionally useful, such constructs should be avoided due to inheritance issues.\nSubclasses of a class that launches a thread during the object construction will not have finished\nany initialization logic of their own before the thread has launched.\n\nThis inspection does not report if the class that starts a thread is declared `final`.\n\n**Example:**\n\n\n      class MyThread extends Thread {\n        MyThread() {\n          start();\n        }\n      }\n",
   "sources": [
     {
@@ -726,6 +698,34 @@
     "inspectionName": "ThreadStartInConstruction"
   },
   "hash": "c962736f48a154428fbbb06fef9ce8e1bb480b7abeb0022632e195c03771d897"
+},{
+  "tool": "Code Inspection",
+  "category": "Threading issues",
+  "type": "Call to 'Thread.start()' during object construction",
+  "severity": "High",
+  "comment": "Call to 'start()' during object construction",
+  "detailsInfo": "Reports calls to `start()` on `java.lang.Thread` or any of its subclasses during object construction.\n\n\nWhile occasionally useful, such constructs should be avoided due to inheritance issues.\nSubclasses of a class that launches a thread during the object construction will not have finished\nany initialization logic of their own before the thread has launched.\n\nThis inspection does not report if the class that starts a thread is declared `final`.\n\n**Example:**\n\n\n      class MyThread extends Thread {\n        MyThread() {\n          start();\n        }\n      }\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/java/io/github/koxx12dev/universal/guis/Loading.java",
+      "language": "JAVA",
+      "line": 47,
+      "offset": 12,
+      "length": 5,
+      "code": {
+        "startLine": 45,
+        "length": 5,
+        "offset": 73,
+        "surroundingCode": "            frame.pack();\n            frame.setVisible(true);\n        }).start();\n    }\n"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "project.main",
+    "inspectionName": "ThreadStartInConstruction"
+  },
+  "hash": "ef336d29d410234b09a0cf62859775ea6340cf121d72efb8d85f8abb94cc6b36"
 },{
   "tool": "Code Inspection",
   "category": "JVM languages",
